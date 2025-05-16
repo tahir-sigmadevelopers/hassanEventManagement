@@ -59,13 +59,13 @@ This project uses Stripe for processing payments for paid events. To set up the 
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/event-management-system.git
-cd event-management-system
+git clone https://github.com/tahir-sigmadevelopers/hassanEventManagement.git
+cd hassanEventManagement
 ```
 
 2. Install dependencies:
 ```
-yarn install
+npm install -f
 ```
 
 3. Create a `.env` file in the project root with the following:
@@ -86,14 +86,14 @@ REACT_APP_STRIPE_PUBLIC=your_stripe_publishable_key
 In the project directory, run:
 
 ```
-yarn start
+npm start
 ```
 
 This runs both backend and frontend applications simultaneously in development mode.
 
 Alternatively, you can run the applications separately:
-- Frontend only: `yarn start:web`
-- Backend only: `yarn start:server`
+- Frontend only: `npm start:web`
+- Backend only: `npm start:server`
 
 Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
@@ -104,7 +104,7 @@ This project uses [GraphQL Code Generator](https://www.graphql-code-generator.co
 If you make changes to the schema (server/graphql/schema/index.ts), update the `.graphql` files in the frontend accordingly, then run:
 
 ```
-yarn codegen
+npm codegen
 ```
 
 Note: Ensure the server is running before generating code.
