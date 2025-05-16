@@ -1,8 +1,8 @@
 import { loadStripe } from '@stripe/stripe-js'
 
-// Initialize Stripe with the public key
+// Initialize Stripe with the public key from environment variables
 export const stripePromise = loadStripe(
-  'pk_test_51M6G7SDTWOMiftC1wMoUqyE4s1YsYdTEIik7Q4qxSSRQYU1bleKeFvgzsRIiqoAU1o6MOV83tRfUlxZHqKdhhRFo00Y5aCYZZH',
+  process.env.REACT_APP_STRIPE_PUBLIC || ''
 )
 
 // Format price for display
